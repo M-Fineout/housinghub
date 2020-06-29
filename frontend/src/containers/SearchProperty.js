@@ -1,9 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 import "../style/App.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import SearchFiltersSidebar from "../components/SearchFiltersSidebar";
 import SearchTable from "../components/SearchTable";
+import AddPropertyButton from "../components/AddPropertyButton";
 
 const SearchProperty = (props) => {
   let columns = [
@@ -42,13 +43,16 @@ const SearchProperty = (props) => {
   rows = [["Apartment", "520 E Main Street", "$2500", 5, 1, "Test"]];
 
   return (
-    <Container className="search-container">
+    <Container className="search-container" fluid="lg">
       <Row>
         <Col className="search-filters-container">
           <SearchFiltersSidebar />
         </Col>
         <Col xs={9} className="search-table-container">
           <SearchTable rows={rows} columns={columns} />
+        </Col>
+        <Col className="add-property-button">
+          <AddPropertyButton />
         </Col>
       </Row>
     </Container>

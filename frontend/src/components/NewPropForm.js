@@ -22,8 +22,6 @@ const NewPropForm = (props) => {
 
   return (
     <div className="container">
-      <h1>Add New Property</h1>
-      <hr />
       <h2>Property Details</h2>
       <form action="" onSubmit={(e) => e.preventDefault()}>
         <PropDetailsForm />

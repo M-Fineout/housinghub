@@ -79,6 +79,10 @@
 .table-header {
   background: rgb(75,160,181);
 }
+
+.add-property-button {
+  justify-content: end;
+}
 /*Nav styles*/
 
 .h-hub-brand {
